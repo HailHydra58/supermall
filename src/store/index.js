@@ -9,12 +9,12 @@ Vue.use(Vuex)
 
 //2.创建Store对象
 const store = new Vuex.Store({
-	state: {
+	state: {	//相当于data
 		cartList: []
 	},
 	mutations,//mutations唯一的目的就是修改state中状态,mutations中的每一个方法尽可能完成的事情比较单一一点
-	actions,
-	getters
+	actions,	//方法
+	getters	//相当于计算属性
 })
 
 //3.挂载Vue实例上	
